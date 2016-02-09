@@ -5,7 +5,7 @@
 	/*inside curly braces is the code block
 	when called upon, this gets ran
 	*/
-	console.log("App Started...");
+	/* console.log("App Started...");
 	
 	//declare a named function way
 	function replaceFirstParagraph () {
@@ -17,7 +17,17 @@
 		
 		firstParagraph.innerHTML = "My new paragraph on JS";
 
-	}
+	} */
+	//declare an anonymous function with a named variable alias
+	var replaceFirstParagraph = function () {
+		console.log("inside anonymous function called");
+		var firstParagraph;
+
+		firstParagraph = document.getElementById("firstParagraph");
+
+		firstParagraph.innerHTML = "My new paragraph on JS";
+
+	};
 	//calling function
 	replaceFirstParagraph();
 
