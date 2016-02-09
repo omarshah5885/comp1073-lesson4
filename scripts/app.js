@@ -7,18 +7,18 @@
 	*/
 	console.log("App Started...");
 	
-	//named function way
+	//declare a named function way
 	function replaceFirstParagraph () {
 
-		console.log("named function called");
+		console.log("inside named function called");
 		var firstParagraph;
 
 		firstParagraph = document.getElementById("firstParagraph");
+		
 		firstParagraph.innerHTML = "My new paragraph on JS";
 
-
 	}
-	
+	//calling function
 	replaceFirstParagraph();
 
 })();
